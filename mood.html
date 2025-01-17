@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日の気分</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #4e3629;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #8DBF96;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #4CAF50;
+            transform: scale(1.05);
+        }
+        .btn.red {
+            background-color: #F4A6C1;
+        }
+        .btn.red:hover {
+            background-color: #d32f2fbf;
+        }
+    </style>
+</head>
+<body>
+    <h1>今日の気分はいかがですか？</h1>
+    <div class="button-container">
+        <a href="relax.html" class="btn">なんだかいいことが起こりそう！</a>
+        <a href="negative.html" class="btn">なんだか悪いことが起こりそう…</a>
+    </div>
+</body>
+</html>
